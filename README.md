@@ -24,7 +24,14 @@ Server is run in VirtualBox and consists Ubuntu 22.4 Server install wiht usual A
 20.3.2023 Osa 1, Projektin aloitus ja template luokka.
   https://youtu.be/-G3Ibx2Hwnc
 
+26.3.2023 Osa 2, Projektin jatkoa.
+ -Osoitteiden uudelleen kirjoitus palvelimella
+ -MVC mallin Controllerin toiminta
+ -Router index.php ja controllerin välissä
 
 ### Suunniteltu/tulevat osat
 
-26.3.2023 Osa 2, Palvelimen asetukset url muokkauksessa, parametrien suodatus ja sivupyyntöjen reititys
+Osat:
+3
+4
+5
