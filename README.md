@@ -29,9 +29,13 @@ Server is run in VirtualBox and consists Ubuntu 22.4 Server install wiht usual A
  -MVC mallin Controllerin toiminta
  -Router index.php ja controllerin välissä
 
+xx.x.xxxx Osa 3,
+ -Views
+ -Models
+ -Database
+
+
 ### Suunniteltu/tulevat osat
 
-Osat:
-3
-4
-5
+4 - Kirjautumis systeemi, salasana turvallisuus ja tietokanna turvallinen käyttö
+5 - Datan validointi ja rexecp/pcre
