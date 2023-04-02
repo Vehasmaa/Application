@@ -15,7 +15,7 @@ class Main
         require_once __DIR__.'/../View/View.php';
 
         $view = new View();
-        $view->render([ 'title' => 'Tietokanta testi','content' => "<h1>Database fetch</h1>".$model->getData()]);
+        $view->render([ 'title' => 'Tietokanta testi','content' => "<h1>Database</h1>".$model->getData()]);
 
     }
 

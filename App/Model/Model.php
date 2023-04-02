@@ -25,7 +25,7 @@ class Model
                 // echo "0 results";
                 die("No results from database");
             }
-            $result -> free_result();
+            // $result -> free_result();
         }
 
         
