@@ -11,6 +11,16 @@ class Router
         $className = ucfirst(array_shift($requestParameters));
         $functionName = array_shift($requestParameters);
 
+        if($className == "")
+        {
+            $className = "Main";
+        }
+
+        if($functionName == "")
+        {
+            $functionName = "index";
+        }
+
         $classFilePath = __DIR__."/../Controller/{$className}.php";
         // Does file even exists?
         if(!file_exists($classFilePath))

@@ -3,49 +3,33 @@
 // Not complete - usefull yet... 
 class Database
 {
-    protected $mysqli;
-    protected $stmt;
+    private $mysqli;
 
     public function __construct()
     {
-        $this->mysqli = new mysqli("localhost","my_user","my_password","my_db");
+        $server = "localhost";
+        $user = "testuser";
+        $password = "testtest";
+        $database = "mvc";
+    
+        $this->mysqli = new mysqli($server, $user, $password, $database);
 
         // Check connection
         if ($this->mysqli -> connect_errno) {
-            echo "Failed to connect to MySQL: " . $this->mysqli -> connect_error;
-            exit();
+            die("Failed to connect to MySQL: " . $this->mysqli -> connect_error);
         }
     }
 
-    public function setQuery(string $query)
+    public function __destruct()
     {
-        if(!$this->stmt = mysqli_prepare($this->mysql, $query))
-        {
-            echo "Statement prepare error.";
-            exit;
-        }
-        
-    }
-    public function setBind($param)
-    {
-        if(is_array($param))
-        {
-            foreach ($param as $key => $value) {
-                # code...
-                // bind line
-            }
-        } else {
-
-        }
+        mysqli_close($this->mysqli);
     }
 
-    public function getResults()
+    public function executeQuery($query)
     {
-        $this->stmt -> execute();
-        $result = $this->stmt->get_result();
-        /* associative array */
-        $row = $result->fetch_array(MYSQLI_ASSOC);
-        printf("%s (%s)\n", $row["Name"], $row["CountryCode"]);
+        $result = $this->mysqli->query($query);
+
+        return $result;
     }
 }
 ?>

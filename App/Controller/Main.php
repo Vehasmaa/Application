@@ -10,12 +10,12 @@ class Main
     {   
         require_once __DIR__.'/../Model/Model.php';
         $model = new Model();
-        //$model->getData();
+        // $result = $model->getData();
         
         require_once __DIR__.'/../View/View.php';
 
         $view = new View();
-        $view->render($model->getData());
+        $view->render([ 'title' => 'Tietokanta testi','content' => "<h1>Database fetch</h1>".$model->getData()]);
 
     }
 
