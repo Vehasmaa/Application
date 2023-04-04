@@ -1,9 +1,10 @@
 <?php
+# Micro MVC striimi projekti 18.3.2023 - 
+# Author: Jurva-Markus Vehasmaa
 
-// $newPath
 class Router
 {
-    // Router only needs this one function
+    // Router only needs this one function to gain execution
     public function __construct()
     {
         $requestParameters = explode('/',$_GET['path']);

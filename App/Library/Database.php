@@ -1,4 +1,7 @@
 <?php
+# Micro MVC striimi projekti 18.3.2023 - 
+# Author: Jurva-Markus Vehasmaa
+
 // TODO make this usefull
 // Not complete - usefull yet... 
 class Database
