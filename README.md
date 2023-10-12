@@ -1,4 +1,13 @@
 # Application
+## Tulevaisuus?
+  - Lisää mahdollisuus käyttää PreRoute tyylistä moduulia käsittelemään muuttujat, riippuen reitistä joka olisi tarkoitus kulkea.
+      - Edellyttää enemmänkin muutoksia miten reititys hoidetaan
+  - Lisää esimerkki käyttäjätunnuksen luomisesta lomakeella ja lomakkeen käsittely
+  - Edellä olevasta kirjautumis versio (olemassa olevan käyttäjä)
+  - Lisää esimerkki sivusta joka vaatii kirjautumisen, ohjaa kirjautumiseen jos ei kirjauduttu, muuten näyttää haettua sisältöä..
+  - Esimerkki template käytöstä kun generoidaan dynaamisesti enemmän elementtejä näkymään
+  - Esimerkki tuotesivusta jossa haku ja näkymä muuttuu dynaamisesti
+  - Käydään läpi koodin toiminta, siivotaan esitystapaa ja kommentointia paremmaksi
 
 ## Aloitettu
   18.3.2023 -> Ensimmäinen video 20.3.2023
@@ -58,12 +67,4 @@ App/Library varattu sovelluksen tarvitsemille yleisemmille luokille
   https://youtu.be/gJOEn8FRjOY
  -Database
 
-
-### Suunniteltu/tulevat osat
-
-4 - Kirjautumis systeemi, salasana turvallisuus
-
-5 - Tietokannan turvallinen käyttö,
-    Datan validointi ulkoa,
-    regexp/pcre
 
