@@ -26,6 +26,18 @@ Kirjoitus koodi kielenä tietysti PHP.
 
 Testiympäristönä VirtualBox, jossa Ubuntu 22.04 Palvelin asennus
   (Apache2 + PHP 8 tuki + MySQL)
+
+## .htaccess tiedosto
+Sovelluksen juuressa on .htaccess jolla ohjataan asioita oikein.
+
+Esim. selaimen osoite pyyntö on: http://127.0.0.1/~jurva/Application/main/test
+Se ohjataan Application hakemistossa olevaan index.php tiedostoon josta se ohjautuu PHP:n omilla ohjauksilla oikein.
+
+Myös http://127.0.0.1/~jurva/Application toimii ja antaa oletuksena Main controllerin test sivun.
+
+Lisäksi .htaccess sisältää tuen ohjata static hakemistoon stattiset tiedostot, kuvat, pdf, jne.
+
+
 ## In English
 This is small software project i code and make videos about.
 

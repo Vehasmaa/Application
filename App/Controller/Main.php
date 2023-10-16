@@ -22,6 +22,13 @@ class Main
 
     }
 
+    public function test()
+    {
+        require_once __DIR__.'/../View/View.php';
+
+        $view = new View();
+        $view->render([ 'title' => 'Testi sivu','content' => "<h1>Just a test page</h1>"]);
+    }
 
 
 }

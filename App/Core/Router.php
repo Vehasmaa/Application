@@ -8,21 +8,34 @@ class Router
     public function __construct()
     {
         $requestParameters = explode('/',$_GET['path']);
-        
-        $className = ucfirst(array_shift($requestParameters));
-        $functionName = array_shift($requestParameters);
 
-        if($className == "")
+        /**
+         * Improved check if there is enough parameters to set class and function
+         */
+        if(count($requestParameters)>1)
+        {
+            $className = ucfirst(array_shift($requestParameters));
+            $functionName = array_shift($requestParameters);
+        }
+        
+        /**
+         * Improved check if variable is even set or is empty, set default value
+         */
+        if(!isset($className) || empty($className))
         {
             $className = "Main";
         }
-
-        if($functionName == "")
+        /**
+         * Improved check if variable is even set or is empty, set default value
+         */
+        if(!isset($functionName) || empty($functionName))
         {
-            $functionName = "index";
+            $functionName = "test";
         }
 
+        // Generate path to actual class file we want
         $classFilePath = __DIR__."/../Controller/{$className}.php";
+
         // Does file even exists?
         if(!file_exists($classFilePath))
         {
