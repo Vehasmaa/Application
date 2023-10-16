@@ -2,12 +2,18 @@
 # Micro MVC striimi projekti 18.3.2023 - 
 # Author: Jurva-Markus Vehasmaa
 
-class Model
+class UserModel
 {
     public function __construct()
     {
         $this->viewTable = array();
-
+        $this->db = $GLOBALS['Database'];
+    }
+    public function getForm()
+    {
+        $buffer = "";
+        
+        return $buffer;
     }
 
     public function getData()
@@ -35,7 +41,31 @@ class Model
 
         /* return $this->viewTable; */
     }
+    public function login()
+    {
+        // get user details
+        $user = $_POST['user'];
+        $password = $_POST['password'];
+        
+        // filter them
+        if(!preg_match('/^[a-zA-Z0-9]+$/',$user))
+        {
+            // username no correct format
+            exit();
+        }
+        if(!preg_match('/^[a-zA-Z0-9]+$/',$password))
+        {
+            // Password not corrcet format
 
+            exit();
+        }
+        
+        // search hash from database
+        $query = "SELECT hash FROM Users WHERE usename='$user'";
+        $result = $this->db->executeQuery($query);
+        
+        // verify password
+    }
 }
 
 ?>

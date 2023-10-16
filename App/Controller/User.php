@@ -12,7 +12,7 @@ class Main
     public function __construct()
     {
         require_once __DIR__.'/../Model/UserModel.php';
-        $this->model = new Model();
+        $this->model = new UserSModel();
 
         require_once __DIR__.'/../View/View.php';
 
@@ -23,6 +23,9 @@ class Main
     {   
         // Generate login form in buffer
         $this->buffer = "";
+
+        // Call model to generate login form
+        $this->buffer = $this->model->getForm();
 
         // Feed said buffer to template
         $view->render([ 'title' => 'Login','content' => "<h1>Loginform</h1>".$this->buffer]);
