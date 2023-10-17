@@ -4,8 +4,14 @@
 
 class Router
 {
-    // Router only needs this one function to gain execution
     public function __construct()
+    {
+
+    }
+
+
+    // Router only needs this one function to gain execution
+    public function execute()
     {
         $requestParameters = explode('/',$_GET['path']);
 
