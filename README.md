@@ -9,6 +9,17 @@
   - Esimerkki tuotesivusta jossa haku ja näkymä muuttuu dynaamisesti
   - Käydään läpi koodin toiminta, siivotaan esitystapaa ja kommentointia paremmaksi
 
+### isot asiat - Big things for future
+  - Riippuvuus injektiot toteutukseen
+  - JWT tokeni tuki
+  - Luokkien autoload
+  - Turvallisuuden lisääminen muuttujien tuonnissa
+
+  - Depency injection to implementation
+  - JWT token support
+  - Class autoloading
+  - Security measures on variable importing
+
 ## Aloitettu
   18.3.2023 -> Ensimmäinen video 20.3.2023
   Kirjoittaja: Jurva-Markus Vehasmaa
