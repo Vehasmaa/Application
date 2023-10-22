@@ -12,13 +12,15 @@
 ### isot asiat - Big things for future
   - Riippuvuus injektiot toteutukseen
   - JWT tokeni tuki
-  - Luokkien autoload
+  - [tehty] Luokkien autoload
   - Turvallisuuden lisääminen muuttujien tuonnissa
+  - [Lisätty] PHPunit testaus tuki
 
   - Depency injection to implementation
   - JWT token support
-  - Class autoloading
+  - [Done] Class autoloading
   - Security measures on variable importing
+  - [Added]PHPunit testing support
 
 ## Aloitettu
   18.3.2023 -> Ensimmäinen video 20.3.2023
