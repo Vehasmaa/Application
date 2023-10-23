@@ -18,6 +18,8 @@
 if(class_exists('Template') && class_exists('Database'))
 {
     $GLOBALS['Template'] = new Template;
+    $GLOBALS['Database'] = new Database;
+    
 }
 else
 {

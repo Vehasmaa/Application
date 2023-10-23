@@ -23,7 +23,7 @@ class Prerouter
 
     public function __construct()
     {
-        $this->$preRouterRunState = false;
+        $this->preRouterRunState = false;
 
         // Add initialisation of data system needed by this
     }
@@ -31,7 +31,7 @@ class Prerouter
     public function execute()
     {
         // Set internal state as run when executed
-        $this->$preRouterRunState =  true;
+        $this->preRouterRunState =  true;
 
     }
     /**
